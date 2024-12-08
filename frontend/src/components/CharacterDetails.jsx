@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
-import axios from 'axios'; // Import Axios
+import axios from 'axios';
 import '../CharacterDetails.css';
 
 const CharacterDetails = () => {
@@ -9,18 +9,17 @@ const CharacterDetails = () => {
   const tableName = searchParams.get('table');
   const [character, setCharacter] = useState(null);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     fetchCharacter();
   }, []);
 
   const fetchCharacter = async () => {
     try {
-      const response = await axios.get(
-        `http://127.0.0.1:5000/characters/${id}`,
-        {
-          params: { table: tableName }, // Pass query params using Axios
-        }
-      );
+      const response = await axios.get(`${API_URL}/characters/${id}`, {
+        params: { table: tableName }, // Pass query params using Axios
+      });
       setCharacter(response.data);
     } catch (error) {
       console.error('Error fetching character details:', error);

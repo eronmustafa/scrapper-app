@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import PropTypes from 'prop-types'; // Import PropTypes for validation
-import axios from 'axios'; // Import Axios
-import './../CharacterTable.css'; // Import custom styles
+import PropTypes from 'prop-types';
+import axios from 'axios';
+import './../CharacterTable.css';
 
 const CharacterTable = ({ tableName }) => {
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
+
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     fetchCharacters();
@@ -15,12 +17,14 @@ const CharacterTable = ({ tableName }) => {
 
   const fetchCharacters = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/characters', {
-        params: { table: tableName, search }, // Pass query parameters using Axios
+      const response = await axios.get(`${API_URL}/characters`, {
+        params: { table: tableName, search },
       });
-      setCharacters(response.data);
+      console.log('API Response:', response.data); // Debug API response
+      setCharacters(Array.isArray(response.data) ? response.data : []); // Ensure array
     } catch (error) {
       console.error('Failed to fetch characters:', error);
+      setCharacters([]); // Fallback to an empty array on error
     }
   };
 
@@ -45,27 +49,28 @@ const CharacterTable = ({ tableName }) => {
             </tr>
           </thead>
           <tbody>
-            {characters.map((char) => (
-              <tr key={char.id}>
-                <td>{char.character_name}</td>
-                <td>{char.actor_name}</td>
-                <td>{char.description}</td>
-                <td className="action-buttons">
-                  <button
-                    className="details-button"
-                    onClick={() => navigate(`/character/${char.id}?table=${tableName}`)}
-                  >
-                    Details
-                  </button>
-                  <button
-                    className="edit-button"
-                    onClick={() => navigate(`/character/edit/${char.id}?table=${tableName}`)}
-                  >
-                    Edit
-                  </button>
-                </td>
-              </tr>
-            ))}
+            {Array.isArray(characters) &&
+              characters.map((char) => (
+                <tr key={char.id}>
+                  <td>{char.character_name}</td>
+                  <td>{char.actor_name}</td>
+                  <td>{char.description}</td>
+                  <td className="action-buttons">
+                    <button
+                      className="details-button"
+                      onClick={() => navigate(`/character/${char.id}?table=${tableName}`)}
+                    >
+                      Details
+                    </button>
+                    <button
+                      className="edit-button"
+                      onClick={() => navigate(`/character/edit/${char.id}?table=${tableName}`)}
+                    >
+                      Edit
+                    </button>
+                  </td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </div>
@@ -73,9 +78,8 @@ const CharacterTable = ({ tableName }) => {
   );
 };
 
-// Add PropTypes for type validation
 CharacterTable.propTypes = {
-  tableName: PropTypes.string.isRequired, // tableName must be a string and is required
+  tableName: PropTypes.string.isRequired,
 };
 
 export default CharacterTable;

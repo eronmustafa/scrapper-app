@@ -17,18 +17,18 @@ export const EditCharacter = () => {
   });
   const navigate = useNavigate();
 
+  // Use API URL from the .env file
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     fetchCharacter();
   }, []);
 
   const fetchCharacter = async () => {
     try {
-      const response = await axios.get(
-        `http://127.0.0.1:5000/characters/${id}`,
-        {
-          params: { table: tableName } // Pass query params using Axios
-        }
-      );
+      const response = await axios.get(`${API_URL}/characters/${id}`, {
+        params: { table: tableName } // Pass query params using Axios
+      });
       setCharacter(response.data);
     } catch (error) {
       console.error('Error fetching character:', error);
@@ -44,7 +44,7 @@ export const EditCharacter = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://127.0.0.1:5000/characters/${id}`,
+        `${API_URL}/characters/${id}`,
         character,
         {
           params: { table: tableName }, // Pass query params
@@ -53,7 +53,7 @@ export const EditCharacter = () => {
       );
       if (response.status === 200) {
         toast.success('Character updated successfully!'); // Show success toast
-        navigate(`/characters?table=${tableName}`);
+        setTimeout(() => navigate(`/characters?table=${tableName}`), 2000); // Navigate after a short delay
       }
     } catch (error) {
       console.error('Error updating character:', error);

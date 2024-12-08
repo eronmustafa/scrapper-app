@@ -1,31 +1,82 @@
-#scrapper-app
+# Scrapper-App
 
-A React and Flask-based web application for managing and displaying scraped character data, featuring CRUD operations, Axios-powered API integration, and UI with search functionality and detailed views. The app includes a cron schedule using Celery and Redis to continuously update the database.
+A React and Flask-based web application for managing and displaying scraped character data. The application supports CRUD operations, Axios-powered API integration, and a user-friendly UI with search functionality and detailed views. It features a robust backend using Celery and Redis to continuously update the database with scraped data.
 
-Note: If the cron schedule is not required, you can skip steps 1-3 in the backend setup and directly run the Flask backend (python main.py). This will allow the server to function without continuous updates to the database.
+---
 
-Setup and Run Instructions:
+## **Deployed Application**
+- **URL:** [https://scrapper-app-task.web.app/](https://scrapper-app-task.web.app/)
 
-Backend Setup:
+---
 
-Step 1 - Install and start Redis server (ensure Redis is downloaded and accessible) - Run command on terminal: 
-redis-server --port 6380
+## **End-to-End Pipeline**
+### Overview
+The application implements an automated scraping pipeline integrated with a robust backend system. Below is a description of the pipeline:
 
-Step 2 - Start the Celery worker: 
-celery -A app.celery_app worker --loglevel=info --pool=solo
+1. **Scraping:**
+   - Two scraping tasks (`scrape_and_store_vikings` and `scrape_and_store_norsemen`) run as Celery tasks.
+   - These tasks fetch data from respective sources and store it in a PostgreSQL database, avoiding duplicate entries by using `ON CONFLICT DO NOTHING`.
 
-Step 3 - Start the Celery beat scheduler: 
-celery -A celery_config beat --loglevel=info
+2. **Data Update Frequency:**
+   - Scraping tasks are scheduled using **Celery Beat** with a configurable interval (default: every hour).
 
-Step 4 - Run the Flask backend: 
-python main.py
+3. **Error Handling:**
+   - **Scraping Failures:** Errors during scraping are logged, and tasks automatically retry with exponential backoff (configurable with Celery).
+   - **Data Quality Issues:** The pipeline validates incoming data for required fields (e.g., `character_name`, `actor_name`) before storing.
 
-Frontend Setup:
+4. **Scheduling and Robustness:**
+   - Celery workers and beat schedulers are backed by Redis as the broker.
+   - Redis ensures task queues are persistent, enabling tasks to retry on failures.
+   - Database operations (inserts) avoid duplication by checking existing data via `ON CONFLICT` clauses in SQL.
 
-Step 5 - Navigate to the frontend directory and install dependencies: 
-npm i
+5. **Frontend Integration:**
+   - A React-based frontend fetches data from the Flask API and displays it with search and detail views.
+   - The frontend provides a responsive and intuitive interface for end-users.
 
-Step 6 - Start the frontend development server: 
-npm run dev
+---
 
-Deployed link:https://scrapper-app-task.web.app/
+## **Public Git Repository**
+The complete codebase, including scraped data, scripts, and web application code, is available in this public repository:
+
+- **GitHub Repository:** [https://github.com/your-repo/scrapper-app](https://github.com/your-repo/scrapper-app)
+
+---
+
+## **Project Contents**
+1. **Scraped Data:**
+   - All scraped data is included in the `data/` directory in JSON format for reproducibility.
+
+2. **Database Table Scripts:**
+   - SQL scripts to recreate the database tables are in the `db_scripts/` directory.
+
+3. **Web Application Code:**
+   - The full source code for the backend (Flask + Celery) and frontend (React) is included.
+
+4. **README:**
+   - Setup and usage instructions for deploying and running the application.
+
+---
+
+## **Setup and Run Instructions**
+
+### **Backend Setup**
+1. **Install Redis:**
+   Ensure Redis is installed and accessible on your machine. Start the Redis server with:
+   ```bash
+   redis-server --port 6380
+
+2. **Start the Celery Worker:**
+   celery -A app.celery_app worker --loglevel=info --pool=solo
+
+3. **Start the Celery Beat Scheduler:**
+   celery -A celery_config beat --loglevel=info
+
+4. **Run the Flask Backend:**
+   python main.py
+
+### **Frontend Setup**
+5. **Navigate to the Frontend Directory and Install Dependencies**
+   npm i
+
+6. **Start the Frontend development server**
+   npm run dev

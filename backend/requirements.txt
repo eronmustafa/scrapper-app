@@ -1,0 +1,12 @@
+Flask==2.3.2  # Flask framework
+Flask-Cors==3.0.10  # CORS support for Flask
+asgiref==3.7.2  # ASGI adapter for Flask
+uvicorn==0.23.1  # ASGI server
+psycopg2-binary==2.9.6  # PostgreSQL driver
+asyncpg==0.27.0  # Async PostgreSQL driver
+SQLAlchemy==1.4.44  # SQLAlchemy ORM
+redis==4.5.1  # Redis (for Celery, if needed)
+celery==5.3.0  # Celery task queue
+requests==2.31.0  # HTTP requests
+python-dotenv==1.0.0  # Environment variable management
+gunicorn==20.1.0  # WSGI server for production

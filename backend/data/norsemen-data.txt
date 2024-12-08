@@ -1,0 +1,114 @@
+[
+    {
+        "actor_name": "Henrik Mestad",
+        "character_name": "Chieftain Olav",
+        "created_at": "Sun, 08 Dec 2024 16:25:04 GMT",
+        "description": "the leader of the village. He finds a route to sail west, and is in possession of a much-coveted map.",
+        "id": 1,
+        "image_url": null
+    },
+    {
+        "actor_name": "Marian Saastad Ottesen",
+        "character_name": "Hildur",
+        "created_at": "Sun, 08 Dec 2024 16:25:04 GMT",
+        "description": "Olav's wife",
+        "id": 2,
+        "image_url": null
+    },
+    {
+        "actor_name": "Nils Jørgen Kaalstad",
+        "character_name": "Arvid",
+        "created_at": "Sun, 08 Dec 2024 16:25:04 GMT",
+        "description": "the chieftain's second-in-command. He loves to go on raids but he also wants to settle in the village.",
+        "id": 3,
+        "image_url": null
+    },
+    {
+        "actor_name": "Kåre Conradi",
+        "character_name": "Orm",
+        "created_at": "Sun, 08 Dec 2024 16:25:04 GMT",
+        "description": "Olav's closeted homosexual brother and husband of Frøya",
+        "id": 4,
+        "image_url": null
+    },
+    {
+        "actor_name": "Silje Torp",
+        "character_name": "Frøya",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "a shield-maiden who joins in on raids and is married to Orm",
+        "id": 5,
+        "image_url": null
+    },
+    {
+        "actor_name": "Trond Fausa Aurvåg",
+        "character_name": "Rufus",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "an enslaved actor from Rome who befriends Orm and plans to modernize the village",
+        "id": 6,
+        "image_url": null
+    },
+    {
+        "actor_name": "Øystein Martinsen",
+        "character_name": "Kark",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "a freed slave who has voluntarily returned to his life as a slave after being institutionalized",
+        "id": 7,
+        "image_url": null
+    },
+    {
+        "actor_name": "Jon Øigarden",
+        "character_name": "Jarl Varg",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "the regional overlord and main antagonist of the show",
+        "id": 8,
+        "image_url": null
+    },
+    {
+        "actor_name": "Kristine Riis",
+        "character_name": "Liv",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "Arvid's gold digger wife",
+        "id": 9,
+        "image_url": null
+    },
+    {
+        "actor_name": "Bjørn Myrene",
+        "character_name": "Torstein Hund",
+        "created_at": "Sun, 08 Dec 2024 16:25:05 GMT",
+        "description": "Varg's right-hand man",
+        "id": 10,
+        "image_url": null
+    },
+    {
+        "actor_name": "Mikkel Bratt Silset",
+        "character_name": "Ragnar",
+        "created_at": "Sun, 08 Dec 2024 16:25:06 GMT",
+        "description": "Arvid's right-hand man",
+        "id": 11,
+        "image_url": null
+    },
+    {
+        "actor_name": "André Eriksen",
+        "character_name": "Ørn",
+        "created_at": "Sun, 08 Dec 2024 16:25:06 GMT",
+        "description": "a local Viking",
+        "id": 12,
+        "image_url": null
+    },
+    {
+        "actor_name": "Thorbjørn Harr",
+        "character_name": "Jarl Bjørn",
+        "created_at": "Sun, 08 Dec 2024 16:25:06 GMT",
+        "description": "Varg's former friend, turned enemy",
+        "id": 13,
+        "image_url": null
+    },
+    {
+        "actor_name": "Stig Frode Henriksen",
+        "character_name": "Vebjørn",
+        "created_at": "Sun, 08 Dec 2024 16:25:06 GMT",
+        "description": "No description available.",
+        "id": 14,
+        "image_url": null
+    }
+]

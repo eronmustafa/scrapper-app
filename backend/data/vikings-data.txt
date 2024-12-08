@@ -1,0 +1,154 @@
+[
+    {
+        "actor_name": "Travis Fimmel",
+        "character_name": "Ragnar",
+        "created_at": "Sun, 08 Dec 2024 16:25:20 GMT",
+        "description": "Played by Travis Fimmel",
+        "id": 1,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_ragnar_16_9.jpg?w=840"
+    },
+    {
+        "actor_name": "Katheryn Winnick",
+        "character_name": "Lagertha",
+        "created_at": "Sun, 08 Dec 2024 16:25:20 GMT",
+        "description": "Played by Katheryn Winnick",
+        "id": 2,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_lagertha.jpg?w=840"
+    },
+    {
+        "actor_name": "Moe Dunford",
+        "character_name": "Aethelwulf",
+        "created_at": "Sun, 08 Dec 2024 16:25:20 GMT",
+        "description": "Played by Moe Dunford",
+        "id": 3,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_aethelwulf.jpg?w=840"
+    },
+    {
+        "actor_name": "Josefin Asplund",
+        "character_name": "Astrid",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Josefin Asplund",
+        "id": 4,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/11/vikings_4b_cast_astrid.jpg?w=840"
+    },
+    {
+        "actor_name": "Alexander Ludwig",
+        "character_name": "Bjorn",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Alexander Ludwig",
+        "id": 5,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_bjorn.jpg?w=840"
+    },
+    {
+        "actor_name": "Lothaire Bluteau",
+        "character_name": "Emperor Charles",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Lothaire Bluteau",
+        "id": 6,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_charles.jpg?w=840"
+    },
+    {
+        "actor_name": "Gustaf Skarsgård",
+        "character_name": "Floki",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Gustaf Skarsgård",
+        "id": 7,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_floki.jpg?w=840"
+    },
+    {
+        "actor_name": "Jasper Pääkkönen",
+        "character_name": "Halfdan the Black",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Jasper Pääkkönen",
+        "id": 8,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_halfdan.jpg?w=840"
+    },
+    {
+        "actor_name": "Marco Ilsø",
+        "character_name": "Hvitserk",
+        "created_at": "Sun, 08 Dec 2024 16:25:21 GMT",
+        "description": "Played by Marco Ilsø",
+        "id": 9,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/11/vikings_4b_cast_hvitserk.jpg?w=840"
+    },
+    {
+        "actor_name": "Alex Høgh Andersen",
+        "character_name": "Ivar the Boneless",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Alex Høgh Andersen",
+        "id": 10,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/11/vikings_4b_cast_ivar.jpg?w=840"
+    },
+    {
+        "actor_name": "Jennie Jacques",
+        "character_name": "Judith",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Jennie Jacques",
+        "id": 11,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_judith.jpg?w=840"
+    },
+    {
+        "actor_name": "Linus Roache",
+        "character_name": "King Ecbert",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Linus Roache",
+        "id": 12,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_s3_ecbert.jpg?w=840"
+    },
+    {
+        "actor_name": "Peter Franzén",
+        "character_name": "King Harald Finehair",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Peter Franzén",
+        "id": 13,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_harald.jpg?w=840"
+    },
+    {
+        "actor_name": "Morgane Polanski",
+        "character_name": "Princess Gisla",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Morgane Polanski",
+        "id": 14,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_gisla_.jpg?w=840"
+    },
+    {
+        "actor_name": "Alyssa Sutherland",
+        "character_name": "Queen Aslaug",
+        "created_at": "Sun, 08 Dec 2024 16:25:22 GMT",
+        "description": "Played by Alyssa Sutherland",
+        "id": 15,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_aslaug_16_9.jpg?w=840"
+    },
+    {
+        "actor_name": "Clive Standen",
+        "character_name": "Rollo",
+        "created_at": "Sun, 08 Dec 2024 16:25:23 GMT",
+        "description": "Played by Clive Standen",
+        "id": 16,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_rollo.jpg?w=840"
+    },
+    {
+        "actor_name": "David Lindström",
+        "character_name": "Sigurd Snake in the Eye",
+        "created_at": "Sun, 08 Dec 2024 16:25:23 GMT",
+        "description": "Played by David Lindström",
+        "id": 17,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/11/vikings_4b_cast_sigurd.jpg?w=840"
+    },
+    {
+        "actor_name": "Jordan Patrick Smith",
+        "character_name": "Ubbe",
+        "created_at": "Sun, 08 Dec 2024 16:25:23 GMT",
+        "description": "Played by Jordan Patrick Smith",
+        "id": 18,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/11/vikings_4b_cast_ubbe.jpg?w=840"
+    },
+    {
+        "actor_name": "John Kavanagh",
+        "character_name": "The Seer",
+        "created_at": "Sun, 08 Dec 2024 16:25:23 GMT",
+        "description": "Played by John Kavanagh",
+        "id": 19,
+        "image_url": "https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2016/10/vikings_season4_cast_seer.jpg?w=840"
+    }
+]
