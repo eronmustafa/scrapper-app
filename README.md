@@ -5,7 +5,11 @@ A React and Flask-based web application for managing and displaying scraped char
 ---
 
 ## **Deployed Application**
-- **URL:** [https://scrapper-app-task.web.app/](https://scrapper-app-task.web.app/)
+- **Frontend URL:** [https://scrapper-app-task.web.app/](https://scrapper-app-task.web.app/)
+    Note: The data is not displayed on the frontend due to a missing SSL certificate on the backend API.
+          This causes mixed content issues when attempting to fetch data from an HTTP API on an HTTPS site.
+          You can access the data directly via the backend API:
+- **Backend URL:** [http://16.171.165.80:5000/](http://16.171.165.80:5000/)
 
 ---
 
@@ -38,7 +42,7 @@ The application implements an automated scraping pipeline integrated with a robu
 ## **Public Git Repository**
 The complete codebase, including scraped data, scripts, and web application code, is available in this public repository:
 
-- **GitHub Repository:** [https://github.com/your-repo/scrapper-app](https://github.com/your-repo/scrapper-app)
+- **GitHub Repository:** [https://github.com/eronmustafa/scrapper-app](https://github.com/eronmustafa/scrapper-app)
 
 ---
 

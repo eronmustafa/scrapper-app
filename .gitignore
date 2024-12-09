@@ -16,6 +16,7 @@ yarn-error.log*
 .env.development
 .env.test
 .env.production
+scrapper_app_key.pem
 
 # Python
 __pycache__/
