@@ -5,7 +5,7 @@ A React and Flask-based web application for managing and displaying scraped char
 ---
 
 ## **Deployed Application**
-- **Frontend URL:** [https://scrapper-app-task.web.app/](https://scrapper-app-task.web.app/)
+- **Frontend URL(Hosted on Firebase):** [https://scrapper-app-task.web.app/](https://scrapper-app-task.web.app/)
     Note: The data is not displayed on the frontend due to a missing SSL certificate on the backend API.
           This causes mixed content issues when attempting to fetch data from an HTTP API on an HTTPS site.
           You can access the data directly via the backend API:
