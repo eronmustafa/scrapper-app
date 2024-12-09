@@ -9,7 +9,9 @@ A React and Flask-based web application for managing and displaying scraped char
     Note: The data is not displayed on the frontend due to a missing SSL certificate on the backend API.
           This causes mixed content issues when attempting to fetch data from an HTTP API on an HTTPS site.
           You can access the data directly via the backend API:
-- **Backend URL:** [http://16.171.165.80:5000/](http://16.171.165.80:5000/)
+- **Backend API(Hosted on AWS EC2):** [http://16.171.165.80:5000/](http://16.171.165.80:5000/)
+- **Database(Hosted on AWS RDS)**
+    The PostgreSQL database is hosted on AWS RDS for reliable and scalable storage.
 
 ---
 
