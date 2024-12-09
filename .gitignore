@@ -16,6 +16,8 @@ yarn-error.log*
 .env.development
 .env.test
 .env.production
+
+# Private keys
 scrapper_app_key.pem
 
 # Python
