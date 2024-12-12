@@ -72,26 +72,31 @@ The complete codebase, including scraped data, scripts, and web application code
    redis-server --port 6380
 
 2. **Start the Celery Worker:**
+   ```bash
    celery -A app.celery_app worker --loglevel=info --pool=solo
 
 3. **Start the Celery Beat Scheduler:**
+   ```bash
    celery -A celery_config beat --loglevel=info
 
 4. **Run the Flask Backend:**
+   ```bash
    python main.py
 
 ### **Frontend Setup**
 5. **Navigate to the Frontend Directory and Install Dependencies**
+   ```bash
    npm i
 
 6. **Start the Frontend development server**
+   ```bash
    npm run dev
 
 
 ## **Handling SSL and CORS Issues**
-    If the frontend fails to fetch data due to SSL or CORS issues:
+   If the frontend fails to fetch data due to SSL or CORS issues:
 ### **For SSL (Self-Signed Certificate):**
-    If your browser blocks API requests due to the self-signed SSL certificate:
+   If your browser blocks API requests due to the self-signed SSL certificate:
 1. **Open your application in Google Chrome.**
 
 2. **Visit the backend API URL directly (e.g., https://16.171.165.80:5000).**
@@ -103,10 +108,11 @@ The complete codebase, including scraped data, scripts, and web application code
 5. **Return to the frontend, and the API calls should now work.**
 
 ### **For CORS:**
-    If you encounter a CORS issue, you can use a browser extension to bypass it:
+   If you encounter a CORS issue, you can use a browser extension to bypass it:
 1. **Install a CORS extension on your browser (e.g., "CORS Unblock" for Chrome).**
 
 2. **Enable the extension after installation.**
 
 3. **Refresh your frontend page, and the API calls should work.**    
 
+ 
